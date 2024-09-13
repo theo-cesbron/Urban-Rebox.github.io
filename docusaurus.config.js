@@ -21,7 +21,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'UrbanReBox', // Usually your GitHub org/user name.
-  projectName: 'EcoContainers', // Usually your repo name.
+  projectName: 'Urban-Rebox.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -72,7 +72,7 @@ const config = {
         title: 'UrbanReBox',
         logo: {
           alt: 'UrbanReBox logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
