@@ -39,7 +39,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
+        /*docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -55,7 +55,7 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-        },
+        },*/
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -76,14 +76,12 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            href: '/staff',            
+            label: 'Qui sommes nous ?',
             position: 'left',
-            label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/doc',
+            href: 'https://github.com/Urban-ReBox/Urban-Rebox.github.io',
             label: 'GitHub',
             position: 'right',
           },
@@ -93,15 +91,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Notre équipe',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Qui sommes nous ?',
+                to: '/staff',
               },
             ],
           },
-          {
+          /*{
             title: 'Community',
             items: [
               {
@@ -117,17 +115,13 @@ const config = {
                 href: 'https://twitter.com/docusaurus',
               },
             ],
-          },
+          },*/
           {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Urban-ReBox/Urban-Rebox.github.io',
               },
             ],
           },

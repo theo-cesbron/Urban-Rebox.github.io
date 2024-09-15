@@ -38,3 +38,141 @@
 {
   color: var(--ifm-color-primary);
 }
+
+.avatar {
+  column-gap: var(--ifm-avatar-intro-margin);
+  display: flex
+}
+
+.avatar__photo {
+  border-radius: 50%;
+  display: block;
+  height: var(--ifm-avatar-photo-size);
+  overflow: hidden;
+  width: var(--ifm-avatar-photo-size)
+}
+
+.avatar__photo--sm {
+  --ifm-avatar-photo-size: 2rem
+}
+
+.avatar__photo--lg {
+  --ifm-avatar-photo-size: 4rem
+}
+
+.avatar__photo--xl {
+  --ifm-avatar-photo-size: 6rem
+}
+
+.avatar__intro {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: var(--ifm-avatar-intro-alignment)
+}
+
+.author_socials {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  line-clamp: 1;
+  -webkit-line-clamp: 1
+}
+
+.author_socialLink,
+.author_socials {
+  line-height: 0
+}
+
+.author_socialLink {
+  margin-right: .4rem
+}
+
+.author_image {
+  --ifm-avatar-photo-size: 3.6rem
+}
+
+.author-as-h1 .author_image {
+  --ifm-avatar-photo-size: 7rem
+}
+
+.author-as-h2 .author_image {
+  --ifm-avatar-photo-size: 5.4rem
+}
+
+.author_details {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.author_name {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.1rem;
+  line-height: 1.1rem
+}
+
+.author-as-h1 .author_name {
+  display: inline;
+  font-size: 2.4rem;
+  line-height: 2.4rem
+}
+
+.author-as-h2 .author_name {
+  display: inline;
+  font-size: 1.4rem;
+  line-height: 1.4rem
+}
+
+.author_title {
+  display: -webkit-box;
+  font-size: .8rem;
+  line-height: 1rem;
+  line-clamp: 1;
+  -webkit-line-clamp: 1
+}
+
+.author-as-h1 .author_title {
+  font-size: 1.2rem;
+  line-height: 1.6rem
+}
+
+.author-as-h2 .author_title {
+  font-size: 1rem;
+  line-height: 1.3rem
+}
+
+.author_blogPostCount {
+  background: var(--ifm-color-secondary);
+  border-radius: var(--ifm-global-radius);
+  color: var(--ifm-color-black);
+  font-size: .8rem;
+  line-height: 1.2;
+  margin-left: .3rem;
+  padding: .1rem .4rem
+}
+
+.center_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.column {
+  --ifm-col-width: 100%;
+  flex: 1 0;
+  margin-left: 0;
+  max-width: var(--ifm-col-width)
+}
+
+@media screen and (max-width:500px) {
+  .column {
+      --ifm-col-width: 100%;
+      flex-basis: var(--ifm-col-width);
+      margin-left: 0
+  }
+}
