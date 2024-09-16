@@ -1,0 +1,9 @@
+{
+  "label": "Toutes les caractéristiques de nos conteneurs",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Les caractéristiques",
+    "description": "L'ensembles des caractéristiques de notre conteneur"
+  }
+}

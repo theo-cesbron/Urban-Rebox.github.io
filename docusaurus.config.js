@@ -39,12 +39,12 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        /*docs: {
+        docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
         },
-        blog: {
+        /* blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -75,6 +75,12 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'infoSidebar',
+            position: 'left',
+            label: 'Nos conteneurs',
+          },
           {
             href: '/staff',            
             label: 'Qui sommes nous ?',
