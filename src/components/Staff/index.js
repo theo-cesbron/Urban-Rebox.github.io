@@ -1,4 +1,3 @@
-import Layout from '@theme/Layout';
 import Avatar from '@site/src/components/Avatar';
 
 
