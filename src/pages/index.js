@@ -1,12 +1,19 @@
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
+import MDXContent from '@theme/MDXContent'
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import Main from '../components/Main.mdx';
+import React from 'react';
+
+
+
+import { docusaurusVersion } from '@generated/site-metadata';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -31,8 +38,17 @@ export default function Home() {
       title={`Accueil`}
       description="Découvrez le nouveau concept UrbanReBox">
       <HomepageHeader />
-      <main className='center_item'>
+      <main>
+        <MDXContent>
+        
+          <Main/>
+
+        </MDXContent>
       </main>
     </Layout>
+
+
   );
 }
+
+
