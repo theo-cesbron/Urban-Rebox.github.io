@@ -1,0 +1,13 @@
+.boxAvatar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+@media (max-width:996px){
+    .boxAvatar {
+        display: grid;
+        grid-template-columns: 1fr;
+    }   
+}

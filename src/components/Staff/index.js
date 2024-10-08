@@ -1,5 +1,5 @@
 import Avatar from '@site/src/components/Avatar';
-
+import styles from './index.module.css';
 
 const MemberList = [
     {
@@ -29,12 +29,12 @@ export default function Staff() {
 
   return (
 
-    <article className='column col--6 margin-top--md margin-bottom--sm row center_item'>
-        <div style={{display: 'flex', alignItems: 'left'}}>
+    <article className=''>
+        <section className={styles.boxAvatar}>
           {MemberList.map((props, idx) => (
               <Avatar key={idx} {...props} />
           ))}
-        </div>
+        </section>
     </article>
   );
 }

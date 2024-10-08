@@ -1,23 +1,21 @@
+import clsx from 'clsx';
+import styles from './index.module.css';
+
 export default function Avatar({ name, role, profil_icon }) {
     return (
-        <div className="column col--6 authorCol center_item">
-            <div className="avatar margin-bottom--sm">
-                <img className="avatar__photo author_image"
-                    src={profil_icon}
-                    alt={name} />
-                <div
-                    className="avatar__intro author_details">
-                    <div className="avatar__name">
-                        <span
-                            className="author_name">{name}
-                        </span>
-                    </div>
-                    <small
-                        className="author_title"
-                        title={role}>{role}
-                    </small>
+        <article className={styles.main}>
+            <img className={styles.photo}
+                src={profil_icon}
+                alt={name} />
+            <div className={styles.text}>
+                <div className={styles.nameBox}>
+                        <span className={styles.name}>{name}</span>
                 </div>
+                <small
+                    className={styles.role}
+                    title={role}>{role}
+                </small>
             </div>
-        </div>
+        </article>
     );
 }

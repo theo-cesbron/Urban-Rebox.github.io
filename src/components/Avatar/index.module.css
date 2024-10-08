@@ -1,0 +1,45 @@
+.main {
+    column-gap: var(--ifm-avatar-intro-margin);
+    display: flex;
+}
+
+.photo {
+    border-radius: 50%;
+    display: block;
+    height: 75px;
+    overflow: hidden;
+    width: 75px
+}
+
+.text {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+    text-align: var(--ifm-avatar-intro-alignment)
+}
+
+
+.nameBox {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: var(--ifm-color-primary-dark);
+}
+
+.role {
+    display: -webkit-box;
+    font-size: .9rem;
+    line-height: 1rem;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+}
