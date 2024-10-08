@@ -29,13 +29,30 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+
+.bak-title {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 15px;
+  width: 100%;
+  
+  /*margin: 8% 0% 8% 0%;*/
+  margin: auto;
+  width: 50%;
+  padding: 3%;
+
+
+}
+
+
 .hero {
-  background-color: var(--ifm-background-color);
+  /*background-color: var(--ifm-background-color);*/
+
 }
 
 .hero__title
 {
   color: var(--ifm-color-emphasis-900)
+  
 }
 
 .hero__subtitle
@@ -56,4 +73,20 @@
   flex: 1 0;
   margin-left: 0;
   max-width: var(--ifm-col-width)
+}
+
+@media screen and (max-width:726px) {
+  .column {
+      --ifm-col-width: 100%;
+      flex-basis: var(--ifm-col-width);
+      margin-left: 0
+  }
+
+  .bak-title {
+    
+    width: 100%;
+  
+  
+  }
+
 }
