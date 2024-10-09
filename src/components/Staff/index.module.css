@@ -6,7 +6,7 @@
 }
 
 
-@media (max-width:996px){
+@media (max-width:600px){
     .boxAvatar {
         display: grid;
         grid-template-columns: 1fr;
