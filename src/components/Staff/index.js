@@ -21,7 +21,27 @@ const MemberList = [
       name: "Dario Weinberger",
       role: "Résponsable communication",
       profil_icon: "/img/members/dario.jpg" 
-    }
+    },
+    {
+      name: "Vincent Shurgaia",
+      role: "Résponsable preuve de concepte",
+      profil_icon: "/img/members/vincent.jpg"
+    },
+    {
+      name: "Said Bouargalne",
+      role: "Résponsable preuve de concepte",
+      profil_icon: "/img/members/said.jpg"
+    },
+    {
+      name: "Yoann Girard-le Plessis",
+      role: "Résponsable buisness modèle",
+      profil_icon: "/img/members/yoann.jpg"
+    },
+    {
+      name: "Floryan Gosselet",
+      role: "Résponsable buisness modèle",
+      profil_icon: "/img/members/floryan.jpg"
+    },
   ];
 
 
@@ -29,7 +49,7 @@ export default function Staff() {
 
   return (
 
-    <article className=''>
+    <article className='center_item'>
         <section className={styles.boxAvatar}>
           {MemberList.map((props, idx) => (
               <Avatar key={idx} {...props} />
