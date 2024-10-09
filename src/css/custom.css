@@ -38,6 +38,7 @@
   /*margin: 8% 0% 8% 0%;*/
   margin: auto;
   width: 50%;
+  min-width: 340px;
   padding: 3%;
   padding-bottom: 2%;
 
@@ -45,8 +46,7 @@
 
 .hero__title
 {
-  color: var(--ifm-color-emphasis-900)
-  
+  color: var(--ifm-color-emphasis-900);
 }
 
 .hero__subtitle
@@ -69,18 +69,19 @@
   max-width: var(--ifm-col-width)
 }
 
-@media screen and (max-width:726px) {
-  .column {
-      --ifm-col-width: 100%;
-      flex-basis: var(--ifm-col-width);
-      margin-left: 0
+
+@media screen and (max-width:413px) {
+  .hero__title {
+    font-size: 10vw;
+  }
+
+  .hero__subtitle 
+  {
+    font-size: 5vw;
   }
 
   .bak-title {
-    
-    width: 100%;
-  
-  
+    min-width: 100%;
   }
 
 }
