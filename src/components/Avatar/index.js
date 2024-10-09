@@ -1,15 +1,17 @@
-import clsx from 'clsx';
 import styles from './index.module.css';
+import AvatarSVG from '../AvatarSVG';
 
 export default function Avatar({ name, role, profil_icon }) {
     return (
         <article className={styles.main}>
-            <img className={styles.photo}
-                src={profil_icon}
-                alt={name} />
+            <picture className={styles.photo}>
+                <img
+                    srcset={profil_icon} />
+                <AvatarSVG/>
+            </picture>
             <div className={styles.text}>
                 <div className={styles.nameBox}>
-                        <span className={styles.name}>{name}</span>
+                    <span className={styles.name}>{name}</span>
                 </div>
                 <small
                     className={styles.role}
