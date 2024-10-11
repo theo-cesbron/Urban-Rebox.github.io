@@ -5,6 +5,7 @@ import MDXContent from '@theme/MDXContent'
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Main from '../components/Main.mdx';
+import MainContent from '../components/AlternatingSection';
 import React from 'react';
 
 
@@ -44,6 +45,9 @@ export default function Home() {
           <Main/>
 
         </MDXContent>
+
+        <MainContent/>
+
       </main>
     </Layout>
 

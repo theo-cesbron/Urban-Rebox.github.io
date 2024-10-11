@@ -85,3 +85,76 @@
   }
 
 }
+
+
+/*----------------------------------------------------------------------------------------*/
+
+.alternating-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .alternating-section.flipped {
+    flex-direction: row-reverse;
+  }
+  
+  .image-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .text-container p {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .alternating-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .alternating-section.flipped {
+      flex-direction: column;
+    }
+  
+    .image-container, .text-container {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-container {
+      font-size: 1em;
+    }
+  }
+  
